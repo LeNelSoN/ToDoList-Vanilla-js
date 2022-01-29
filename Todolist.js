@@ -3,7 +3,10 @@ const btn1 = document.getElementById("press")
 // if click on the button "à faire" add an element "task" in ul
 document.getElementById('press').addEventListener("click", function () {
     let task = add.value
-    let addTask = '<li><input type="checkbox" name="check" id="' + task + '">' + task + '<button> Supprimer </button> </li>'
+    let hide = "this.style.display='none'"
+    let addTask = 
+    `<li ondblclick=${hide}>${task}</li>`
+
     document.getElementById('list')
         .insertAdjacentHTML("afterbegin", addTask)   
     });
@@ -13,9 +16,8 @@ document.getElementById("add").addEventListener("keypress", () => {
     else btn1.disabled = true;
 })
 
-// document.getElementsByTagName('button').addEventListener("click", function () {
-//     let ul = this.parentNode;
-//     ul.removeChild()
-// })
+document.querySelector("li").addEventListener("click", function () {
+    console.log("prout");
+})
 
     
