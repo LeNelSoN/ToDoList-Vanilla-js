@@ -15,3 +15,9 @@ document.getElementById("add").addEventListener("keypress", () => {
     if (add.value.length >= 1) btn1.disabled = false
     else btn1.disabled = true;
 })
+
+document.querySelector("li").addEventListener("click", function () {
+    console.log("prout");
+})
+
+    
