@@ -17,13 +17,21 @@ body{
     background-color: #ef9d10;
     width: 33%;
     box-shadow: #3b3b3b 5px 5px 15px;
-
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
 }
 ul{
    background-color: #ffb941;
-   /* margin: 0 10em; */
+   border-radius: 0.5em ;
    width: 100%;
    box-shadow: #3b3b3b 5px 5px 15px;
+   -webkit-border-radius: 0.5em ;
+   -moz-border-radius: 0.5em ;
+   -ms-border-radius: 0.5em ;
+   -o-border-radius: 0.5em ;
 }
 li{
     translate: -20px; 
